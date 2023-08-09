@@ -52,8 +52,6 @@ html {
 }
 
 .box {
-  /* min-width: 410px; */
-  /* min-height: 416px; */
   border-radius: 5px;
   border: 1px solid rgba(66,87,101, 0.2);
   opacity: 1;
