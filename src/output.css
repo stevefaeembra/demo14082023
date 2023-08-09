@@ -577,14 +577,6 @@ video {
   display: flex;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-1\/3 {
-  width: 33.333333%;
-}
-
 .w-3\/4 {
   width: 75%;
 }
@@ -599,10 +591,6 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
-}
-
-.justify-center {
-  justify-content: center;
 }
 
 .text-center {
@@ -681,6 +669,12 @@ html {
   border-radius: 5px;
   border: 1px solid rgba(66,87,101, 0.2);
   opacity: 1;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.cardheader {
+  min-height: 3rem;
 }
 
 @media (min-width: 640px) {

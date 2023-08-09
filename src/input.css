@@ -55,4 +55,10 @@ html {
   border-radius: 5px;
   border: 1px solid rgba(66,87,101, 0.2);
   opacity: 1;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.cardheader {
+  min-height: 3rem;
 }
