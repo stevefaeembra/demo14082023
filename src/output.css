@@ -581,10 +581,6 @@ video {
   width: 75%;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -679,6 +675,10 @@ html {
 
 .cardheader {
   min-height: 3rem;
+}
+
+article {
+  margin-bottom: 180px;
 }
 
 @media (min-width: 640px) {
