@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  opacity: 1;
+  color: rgba(99,193,255,1);
+  font-family: "Lato-Bold";
+  font-size: 26px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 3.25px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+h2 {
+  opacity: 1;
+  color: rgba(20,143,207,1);
+  font-family: "Lato-Bold";
+  font-size: 72px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 72px;
+}
+
+p {
+  opacity: 1;
+  color: rgba(37,48,59,1);
+  font-family: "Lato-Bold";
+  font-size: 36px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 52px;
+}
+
+html {
+  font-size: 16px;
+}
+
+.sky {
+  color: #148FCF;
+}
+
+.blue {
+  color: #148FCF;
+}
+
+.graphite {
+  color: #25303B;
+}
