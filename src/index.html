@@ -4,14 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./output.css" />
-    <!-- <script src="./script.js" /> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
       window.addEventListener("load", function() {
-          console.log("Page has finished loading!");
-          console.log(window);
-          console.log(window.document);
-          gsap.to("body", {backgroundColor: "red", duration: 3});
+          gsap.registerPlugin(ScrollTrigger);
+          gsap.to("body", {backgroundColor: "cyan", duration: 3});
+          gsap.to("#section_available", {
+            scrollTrigger: {
+              trigger: "#section_available",
+              markers: "true",
+              start: "top center",
+              end: "bottom top",
+              toggleActions:"play none reverse none"
+            },
+            opacity:1,
+	          duration:3
+          })
+          gsap.to("#section_global", {
+            scrollTrigger: {
+              trigger: "#section_global",
+              markers: "true",
+              start: "top center",
+              end: "bottom top",
+              toggleActions:"play none reverse none"
+            },
+            opacity:1,
+	          duration:3
+          })
+          gsap.to("#section_clearcut", {
+            scrollTrigger: {
+              trigger: "#section_clearcut",
+              markers: "true",
+              start: "top center",
+              end: "bottom top",
+              toggleActions:"play none reverse none"
+            },
+            opacity:1,
+	          duration:3
+          })
       });
     </script>
     <title>Red Snapper Exercise - Steven Kay</title>
@@ -103,7 +134,7 @@
       </div>
     </header>
     <content class="flex flex-col w-3/4 mx-auto">
-      <article>
+      <article class="hide fadeinsection" id="section_available">
         <div>
           <h1 class="text-base">Available now</h1>
           <h2 class="text-5xl blue">No waiting, start today</h2>
@@ -114,7 +145,7 @@
           </p>
         </div>
       </article>
-      <article>
+      <article class="hide fadeinsection" id="section_global">
         <div>
           <h1 class="text-base sky">Global</h1>
           <h2 class="text-5xl blue">Expertise does not need a passport.</h2>
@@ -125,7 +156,7 @@
           </p>
         </div>
       </article>
-      <article>
+      <article class="hide fadeinsection" id="section_clearcut">
         <div>
           <h1 class="text-base sky">CLEAR-CUT</h1>
           <h2 class="text-5xl blue">No big databases to navigate.</h2>
