@@ -9,14 +9,14 @@
     <script>
       window.addEventListener("load", function() {
           gsap.registerPlugin(ScrollTrigger);
-          gsap.to("body", {backgroundColor: "cyan", duration: 3});
           gsap.to("#section_available", {
             scrollTrigger: {
               trigger: "#section_available",
               markers: "true",
               start: "top center",
-              end: "bottom top",
-              toggleActions:"play none reverse none"
+              end: "bottom center",
+              toggleActions:"play none reverse none",
+              pin: true,
             },
             opacity:1,
 	          duration:3
@@ -26,8 +26,9 @@
               trigger: "#section_global",
               markers: "true",
               start: "top center",
-              end: "bottom top",
-              toggleActions:"play none reverse none"
+              end: "bottom center",
+              toggleActions:"play none reverse none",
+              pin: true,
             },
             opacity:1,
 	          duration:3
@@ -37,8 +38,9 @@
               trigger: "#section_clearcut",
               markers: "true",
               start: "top center",
-              end: "bottom top",
-              toggleActions:"play none reverse none"
+              end: "bottom center",
+              toggleActions:"play none reverse none",
+              pin: true,
             },
             opacity:1,
 	          duration:3
@@ -164,6 +166,15 @@
             When looking for a needle in a haystack, why go digging around in a
             bigger haystack? Each system focuses on one therapeutic condition at
             a time, so you can focus on what matters.
+          </p>
+        </div>
+      </article>
+      <!-- following used for padding -->
+      <article class="hide fadeinsection" id="empty">
+        <div>
+          <h1 class="text-base sky"></h1>
+          <h2 class="text-5xl blue"></h2>
+          <p class="text-2xl graphite">
           </p>
         </div>
       </article>
