@@ -9,41 +9,21 @@
     <script>
       window.addEventListener("load", function() {
           gsap.registerPlugin(ScrollTrigger);
-          gsap.to("#section_available", {
-            scrollTrigger: {
-              trigger: "#section_available",
-              markers: "true",
-              start: "top center",
-              end: "50% center",
-              toggleActions:"play none reverse none",
-              pin: true,
-            },
-            opacity:1,
-	          duration:2
-          })
-          gsap.to("#section_global", {
-            scrollTrigger: {
-              trigger: "#section_global",
-              markers: "true",
-              start: "top center",
-              end: "50% center",
-              toggleActions:"play none reverse none",
-              pin: true,
-            },
-            opacity:1,
-	          duration:2
-          })
-          gsap.to("#section_clearcut", {
-            scrollTrigger: {
-              trigger: "#section_clearcut",
-              markers: "true",
-              start: "top center",
-              end: "50% center",
-              toggleActions:"play none reverse none",
-              pin: true,
-            },
-            opacity:1,
-	          duration:2
+          const sections = ["available", "global", "clearcut"];
+          sections.forEach(sectionName => {
+            const id = `#section_${sectionName}`;
+            gsap.to(id, {
+              scrollTrigger: {
+                trigger: id,
+                markers: "true",
+                start: "top center",
+                end: "bottom center",
+                toggleActions:"play none reverse none",
+                pin: true,
+              },
+              opacity:1,
+              duration:2,
+            })  
           })
       });
     </script>
