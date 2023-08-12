@@ -63,17 +63,13 @@ html {
   min-height: 3rem;
 }
 
-/* article {
-  margin-bottom: 180px;
-} */
-
 .hide {
   opacity: 0.0;
 }
 
 .fadeinsection {
   height: 300px;
-  margin-bottom: 200px;
+  margin-bottom: 400px;
 }
 
 
